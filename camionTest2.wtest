@@ -1,8 +1,8 @@
-import camion.*
-import cosas.*
+import camion2.*
+import cosas2.*
 
 describe "Test de Camion" {
-
+  /*
   method initialize(){ //Esto setea los valores iniciales para las pruebas
     camion.cargar(knightRaider)
     arena.peso(200)
@@ -10,8 +10,15 @@ describe "Test de Camion" {
     ladrillos.cantidad(10)
     camion.cargar(ladrillos)
   }
+  */
 
   test "El camion tiene un peso total de 1720 kg" {
+    camion.cargar(knightRaider)
+    arena.peso(200)
+    camion.cargar(arena)
+    ladrillos.cantidad(10)
+    camion.cargar(ladrillos)
+    
     assert.equals(1720, camion.pesoTotal())
   }
 

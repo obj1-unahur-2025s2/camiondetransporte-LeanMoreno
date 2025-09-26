@@ -1,9 +1,15 @@
 import cosas.*
 
-describe "group of test for cosas" {
+describe "Test de un par de cosas" {
 
-  test "first test" {
-    assert.that(true)
+  test "bateria antiaerea con misiles pesa 300" {
+    bateria.cargarMisiles()
+    assert.equals(300, bateria.peso())
+  }
+
+  test "Embalaje con arena que pesa 200 tiene peso par" {
+    arena.peso(200)
+    assert.that(embalaje.esPesoPar())
   }
 
 }

@@ -5,6 +5,7 @@ object camion {
 
     method cargar(unaCosa){
         carga.add(unaCosa)
+        unaCosa.consecuenciasDeLaCarga()
     }
 
     method descargar(unaCosa){
